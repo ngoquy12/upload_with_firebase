@@ -1,0 +1,15 @@
+- memo trong React là một HOC (Higher Order Component)
+- HOC là một kỹ thuật giúp tái sử dụng lại logic giữa các component
+- HOC nhận vào một component và trả về một component mới có tính năng bổ sung
+- memo sẽ sử dụng toán tử strick (===), nó kiểm tra xem có bất kỳ một props nào từ component
+cha truyền xuống có sự thay đổi, nếu chỉ cần 1 props thay đổi thì component mới bị re-render lại
+
+- useCallback là một React hooks dùng để tránh việc tạo các hàm không cần thiết
+- Các hàm chỉ được tạo deps thay đổi 
+- Cú pháp: useCallback(callback, [])
+
+- useMemo là một React hooks dùng để ghi nhớ kết quả trước đó, nó chỉ thực hiện tính toán lại logic khi
+deps thay đổi
+- Cú pháp: useMemo(callback, [])
+
+- useRef là một React hooks dùng để tham chiếu đến một phần tử trong DOM
